@@ -38,7 +38,7 @@ if page_select == 'New York City':
     if category:
         filt_data = filt_data[filt_data['CATEGORY'].isin(category)]
 
-    map_center = [40.7128, 74.0060]
+    map_center = [40.7128, -74.0060]
     
     map = folium.Map(location=map_center, zoom_start=10)
     marker_cluster = MarkerCluster().add_to(map)
