@@ -9,7 +9,7 @@ st.set_page_config(layout="wide")
 
 st.title("Geo-Visualization of Uber Trips")
 
-data = pd.read_csv('/Users/lukekerwin/Library/CloudStorage/OneDrive-ThePennsylvaniaStateUniversity/School/DS 330/DS-330-Project/UberDatasetFiltered.csv')
+data = pd.read_csv('UberDatasetFiltered.csv')
 # START_DATE,END_DATE,CATEGORY,START,STOP,MILES,PURPOSE,START_STATE,STOP_STATE,START_LOC,STOP_LOC,START_LAT,START_LONG,STOP_LAT,STOP_LONG
 data.columns = ['START_DATE', 'END_DATE', 'CATEGORY', 'START', 'STOP', 'MILES', 'PURPOSE', 'START_STATE', 'STOP_STATE', 'START_LOC', 'STOP_LOC', 'LAT', 'LON', 'STOP_LAT', 'STOP_LONG']
 
